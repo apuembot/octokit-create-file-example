@@ -15,18 +15,18 @@ const main = async () => {
 
     const { data } = await octokit.repos.createOrUpdateFileContents({
       // replace the owner and email with your own details
-      owner: "your-github-account",
+      owner: "apuembot",
       repo: "octokit-create-file-example",
-      path: "OUTPUT.md",
+      path: "test-dir/OUTPUT.md",
       message: "feat: Added OUTPUT.md programatically",
       content: contentEncoded,
       committer: {
-        name: `Octokit Bot`,
-        email: "your-email",
+        name: `apuembot`,
+        email: "apuembot@protonmail.com",
       },
       author: {
-        name: "Octokit Bot",
-        email: "your-email",
+        name: "apuembot",
+        email: "apuembot@protonmail.com",
       },
     });
 
